@@ -26,7 +26,7 @@
 
   <extensions defaultExtensionNs="com.intellij">
     <toolWindow id="TestRail Viewer" secondary="true" icon="/testrail-icon.png" anchor="right"
-                factoryClass="testcompany.testrail.main.MyToolWindowFactory"/>
+                factoryClass="main.window.TestRailWindow"/>
   </extensions>
 
   <actions>

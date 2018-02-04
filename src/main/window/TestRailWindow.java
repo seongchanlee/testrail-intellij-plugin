@@ -1,4 +1,4 @@
-package testcompany.testrail.main;
+package main.window;
 
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.EditorFactory;
@@ -11,10 +11,12 @@ import com.intellij.psi.*;
 import com.intellij.psi.util.PsiTreeUtil;
 import com.intellij.ui.content.Content;
 import com.intellij.ui.content.ContentFactory;
+import main.model.TestCase;
+import main.model.TestCaseData;
 
 import javax.swing.*;
 
-public class MyToolWindowFactory implements ToolWindowFactory {
+public class TestRailWindow implements ToolWindowFactory {
 
     private ToolWindow toolWindow;
     private JPanel panel1;
@@ -24,7 +26,7 @@ public class MyToolWindowFactory implements ToolWindowFactory {
     private TestCaseData testCaseData;
     private TestCase currentTestCase;
 
-    public MyToolWindowFactory() {
+    public TestRailWindow() {
         CaretListener myCaretListener = new CaretListener() {
             @Override
             public void caretPositionChanged(CaretEvent e) {

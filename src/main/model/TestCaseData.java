@@ -1,4 +1,4 @@
-package testcompany.testrail.main;
+package main.model;
 
 import java.util.ArrayList;
 import java.util.List;

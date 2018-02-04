@@ -1,4 +1,4 @@
-package testcompany.testrail.main;
+package main.model;
 
 public class TestCase {
 
